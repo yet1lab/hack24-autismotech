@@ -1,11 +1,9 @@
-/* Reset básico */
 body, html {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
 }
-/* Estilo para o título */
 h1, h2 {
   font-size: 24px;
   margin-bottom: 15px;
@@ -13,7 +11,6 @@ h1, h2 {
   color: #333;
 }
 
-/* Estilo para os parágrafos e listas */
 p {
   margin-bottom: 15px;
   font-size: 16px;
@@ -23,7 +20,7 @@ p {
 ul {
   margin-left: 20px;
 }
-/* Página */
+
 body {
   background: url('assets/backgroundduo.png') no-repeat center center fixed;
   background-size: cover;
@@ -34,7 +31,6 @@ body {
   color: #333;
 }
 
-/* Login */
 .login-container {
   background: #fff;
   padding: 40px 30px;
@@ -117,7 +113,6 @@ body {
  -o-transition: 0.3s;
 }
 
-/* Frase Esqueci Minha Senha */
 .forgot-password {
   display: block;
   margin-top: 10px;
@@ -136,7 +131,6 @@ body {
   -o-transition: 0.3s;
 }
 
-/* Modal */
 .modal {
   display: none;
   position: fixed;
@@ -154,7 +148,7 @@ body {
   width: 80%;
   max-width: 600px;
   height: 80%;
-  overflow-y: auto; /* Rolagem interna se necessário */
+  overflow-y: auto;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
@@ -162,7 +156,6 @@ body {
   transition: opacity 0.3s ease-out;
 }
 
-/* Botão de Fechar */
 .close {
   position: absolute;
   top: 10px;
@@ -238,7 +231,6 @@ body {
   text-decoration: none;
 }
 
-/* Termos */
 .terms-modal {
   text-align: center;
   padding: 20px;
@@ -252,7 +244,7 @@ body {
   cursor: pointer;
   margin-top: 10px;
 }
-/* Botão Traduz */
+
 .button-container {
   padding: 10px;
   border-radius: 5px;
@@ -302,7 +294,7 @@ body {
   align-self: center;
   justify-content: center;
 }
-/* Caixa de Login */
+
 .logo-and-title {
   display: flex;
   justify-content: space-between;
@@ -353,7 +345,7 @@ body {
   font-weight: bold;
   color: #ffc301;
 }
-/* Inputs */
+
 .input-group {
   margin: 20px 0;
 }
@@ -373,7 +365,7 @@ body {
 
 .input-wrapper input {
   width: 80%;
-  padding: 10px 15px 10px 45px; /* Espaço para o ícone */
+  padding: 10px 15px 10px 45px;
   border-radius: 16px;
   border: 1px solid #ccc;
   background: #f0edff;

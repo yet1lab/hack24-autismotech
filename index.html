@@ -8,16 +8,13 @@
 </head>
 <body>
   <div class="login-page">
-     <!-- Botão Traduz -->
      <div class="button-container">
-      <button class="translate-button" onclick="openModal('modal1')">
-        <img src="assets/traduz logo.svg" alt="Traduz">
+      <button class="translate-button" onclick="openModal('modal1')" aria-label="Ativar ou desativar tradução">
+        <img src="assets/traduz logo.svg" alt="Ícone de traduzir">
         <span class="button-text" id="translate-text" style="display: none;">Desativar o TRADUZ</span>
-      </button>
+     </button>
+     
     </div>
-    
-    
-    <!-- Caixa de Login -->
     <div class="login-container">
       <div class="logo-and-title">
         <div class="logo">
@@ -47,7 +44,6 @@
     </div>
   </div>
 
-    <!-- Modal 1 -->
     <div class="modal" id="modal1" role="dialog" aria-labelledby="modal1-title" aria-hidden="true">
       <div class="modal-content">
         <h1 id="modal1-title">Deseja ativar o <span class="highlight">TRADUZ</span>?</h1>
@@ -58,7 +54,6 @@
       </div>
     </div>
 
-    <!-- Modal 2 -->
     <div class="modal" id="modal2">
       <div class="modal-content">
         <h1>OLÁ!</h1>
@@ -74,7 +69,6 @@
       </div>
     </div>
 
-    <!-- Termos de uso -->
     <div class="modal" id="modal3">
       <div class="modal-content terms-modal">
         <button class="close" onclick="closeModal('modal3')">X</button>

@@ -1,5 +1,5 @@
 function openModal(modalId) {
-  document.body.style.overflow = 'hidden';  // Prevent scroll on body
+  document.body.style.overflow = 'hidden'; 
   const modal = document.getElementById(modalId);
   if (modal) {
     modal.style.display = 'flex';
@@ -7,7 +7,7 @@ function openModal(modalId) {
 }
 
 function closeModal(modalId) {
-  document.body.style.overflow = '';  // Restore scroll on body
+  document.body.style.overflow = '';
   const modal = document.getElementById(modalId);
   if (modal) {
     modal.style.display = 'none';
@@ -15,7 +15,7 @@ function closeModal(modalId) {
 }
 
 function closeAnyModal() {
-  document.body.style.overflow = '';  // Restore scroll on body
+  document.body.style.overflow = '';  
   const openModal = document.querySelector('.modal[style*="display: flex"]');
   if (openModal) {
     openModal.style.display = 'none';
@@ -30,8 +30,7 @@ function activateTranslate() {
 function feedbackTranslate() {
   closeModal('modal2');
   alert('Traduz ativado com sucesso!');
-  
-  // Após o alert ser fechado, exibe o texto "Desativar o TRADUZ"
+
   document.getElementById('translate-text').style.display = 'inline'; 
 }
 
@@ -40,7 +39,6 @@ function showTerms() {
   openModal('modal3');
 }
 
-// Close modals with ESC key
 document.addEventListener('keydown', function (event) {
   if (event.key === 'Escape') {
     closeAnyModal();
