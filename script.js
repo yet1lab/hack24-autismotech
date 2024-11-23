@@ -58,11 +58,11 @@ function activateTranslate() {
 }
 
 function openMain() {
-  window.location.href = "..";
+  window.location.href = "./";
   document.getElementById('translate-text').style.display = 'inline'; 
 }
 
-function openCorrect() {
+function openFixed() {
   window.location.href = "fixed.html";
   document.getElementById('translate-text').style.display = 'inline'; 
 }
