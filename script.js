@@ -22,7 +22,6 @@ function openModal(modalId) {
   }
 }
 
-
 function closeModal(modalId) {
   document.body.style.overflow = '';
   const modal = document.getElementById(modalId);
