@@ -11,28 +11,28 @@
 <!--                    BASIC LOGIN PAGE                          -->
 <!--==============================================================-->
 <body>
-<div id="login-page" aria-hidden="true">
-	<div class="login-container" aria-hidden="true">
-		<div class="logo-and-title" aria-hidden="true">
-			<div class="logo" aria-hidden="true">
-				<img src="assets/unisab-logo (1).svg" alt="Logo da univerdade" aria-hidden="true">
-				<span class="unisab-text" aria-hidden="true">unisab</span>
+<div id="login-page">
+	<div class="login-container">
+		<div class="logo-and-title">
+			<div class="logo">
+				<img src="assets/unisab-logo (1).svg" alt="Logo da universidade">
+				<span class="unisab-text">unisab</span>
 			</div>
 		</div>
-		<div class="divider-horizontal" aria-hidden="true"></div>
-		<h2 class="welcome-message" aria-hidden="true">Bem-vindo aluno!</h2>
-		<div class="input-group" aria-hidden="true">
-			<div class="input-wrapper" aria-hidden="true">
-				<img src="assets/login.svg" alt="Login Icon" class="input-icon" aria-hidden="true">
-				<input type="text" placeholder="Matrícula" aria-hidden="true">
+		<div class="divider-horizontal"></div>
+		<h2 class="welcome-message">Bem-vindo aluno!</h2>
+		<div class="input-group">
+			<div class="input-wrapper">
+				<img src="assets/login.svg" alt="Login Icon" class="input-icon">
+				<input type="text" placeholder="Matrícula">
 			</div>
-			<div class="input-wrapper" aria-hidden="true">
-				<img src="assets/senha.svg" alt="Icone de Senha" class="input-icon" aria-hidden="true">
-				<input type="password" placeholder="Senha" aria-hidden="true">
+			<div class="input-wrapper">
+				<img src="assets/senha.svg" alt="Icone de Senha" class="input-icon">
+				<input type="password" placeholder="Senha">
 			</div>
 		</div>
-		<button class="login-button" aria-hidden="true">ENTRAR</button>
-		<a href="#" class="forgot-password" aria-hidden="true">Esqueci minha senha</a>
+		<button class="login-button">ENTRAR</button>
+		<a href="#" class="forgot-password">Esqueci minha senha</a>
 	</div>
 </div>
 
@@ -40,17 +40,17 @@
 <!--                       TRADUZ POPUPS                          -->
 <!--==============================================================-->
 <div class="button-container" z-index="-2">
-	<button class="translate-button" onclick="openModal('modal1')" aria-label="Ativar TRADUZ">
+	<button class="translate-button" onclick="openModal('modal1')" aria-label="Desativar TRADUZ">
 		<img src="assets/traduz logo.svg" alt="Ícone de traduzir">
-		<span class="button-text" id="translate-text">Ativar TRADUZ</span>
+		<span class="button-text" id="translate-text">Desativar TRADUZ</span>
 	</button>
 </div>
 
 <dialog class="modal" id="modal1" tabIndex="-1" aria-labelledby="modal1-title" aria-describedby="modal1-description">
 	<div class="modal-content">
 		<div class="button-group">
-			<h2 id="modal1-title">Deseja ativar o TRADUZ?</h2>
-			<button data-message="SIM" class="accept" onclick="openCorrect()">SIM</button>
+			<h2 id="modal1-title">Deseja desativar o TRADUZ?</h2>
+			<button data-message="SIM" class="accept" onclick="openMain()">SIM</button>
 			<button class="reject" onclick="closeModal('modal1')">NÃO</button>
 		</div>
 
