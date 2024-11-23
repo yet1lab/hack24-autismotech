@@ -76,18 +76,18 @@ body {
   color: #525252;
 }
 
-.input-group input {
+.input-group > input {
   width: 80%;
   margin: 10px auto;
   padding: 10px 15px;
   border-radius: 16px;
-  border: 1px solid #ccc;
+  border: 2px solid #000;
   background: #f0edff;
   font-size: 18px;
 }
 
-.input-group input::placeholder {
-  color: #1c1c1c;
+.input-group > input::placeholder {
+  color: #ddd;
   text-align: center;
 }
 
