@@ -2,34 +2,37 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title aria-hidden="true">Portal do Aluno</title>
   <link rel="stylesheet" href="styles.css">
+  <title aria-hidden="true">Portal do Aluno</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
+<!--==============================================================-->
+<!--                    BASIC LOGIN PAGE                          -->
+<!--==============================================================-->
 <body>
 <div id="login-page" aria-hidden="true">
-	<div class="login-container">
-		<div class="logo-and-title">
-			<div class="logo">
-				<img src="assets/unisab-logo (1).svg" alt="Logo da univerdade">
-				<span class="unisab-text">unisab</span>
+	<div class="login-container" aria-hidden="true">
+		<div class="logo-and-title" aria-hidden="true">
+			<div class="logo" aria-hidden="true">
+				<img src="assets/unisab-logo (1).svg" alt="Logo da univerdade" aria-hidden="true">
+				<span class="unisab-text" aria-hidden="true">unisab</span>
 			</div>
 		</div>
-		<div class="divider-horizontal"></div>
-		<h2 class="welcome-message">Bem-vindo aluno!</h2>
-		<div class="input-group">
-			<div class="input-wrapper">
-				<img src="assets/login.svg" alt="Login Icon" class="input-icon">
-				<input type="text" placeholder="Matrícula">
+		<div class="divider-horizontal" aria-hidden="true"></div>
+		<h2 class="welcome-message" aria-hidden="true">Bem-vindo aluno!</h2>
+		<div class="input-group" aria-hidden="true">
+			<div class="input-wrapper" aria-hidden="true">
+				<img src="assets/login.svg" alt="Login Icon" class="input-icon" aria-hidden="true">
+				<input type="text" placeholder="Matrícula" aria-hidden="true">
 			</div>
-			<div class="input-wrapper">
-				<img src="assets/senha.svg" alt="Senha Icon" class="input-icon">
-				<input type="password" placeholder="Senha">
+			<div class="input-wrapper" aria-hidden="true">
+				<img src="assets/senha.svg" alt="Icone de Senha" class="input-icon" aria-hidden="true">
+				<input type="password" placeholder="Senha" aria-hidden="true">
 			</div>
 		</div>
-		<button class="login-button" >ENTRAR</button>
-		<a href="#" class="forgot-password">Esqueci minha senha</a>
+		<button class="login-button" aria-hidden="true">ENTRAR</button>
+		<a href="#" class="forgot-password" aria-hidden="true">Esqueci minha senha</a>
 	</div>
 </div>
 
@@ -54,68 +57,70 @@
 		<a href="#" class="terms-link" onclick="showTerms()">Termos de uso</a>
 	</div>
 </dialog>
+
 <!--==============================================================-->
-    
-		<div class="modal" id="modal3">
-      <div class="modal-content terms-modal">
-        <button class="close" onclick="closeModal('modal3')">X</button>
-        <h2>Termos de Uso do Plugin Traduz</h2>
+<!--                   TRADUZ TERMS OF USE                        -->
+<!--==============================================================-->
+<div class="modal" id="modal3">
+	<div class="modal-content terms-modal">
+		<button class="close" onclick="closeModal('modal3')">X</button>
+		<h2>Termos de Uso do Plugin Traduz</h2>
 
-        <h3>1. Introdução</h3>
-        <p>Bem-vindo(a)! Este plugin utiliza inteligência artificial para melhorar a acessibilidade digital, fornecendo uma experiência inclusiva e personalizada para todos os usuários, especialmente Pessoas com Deficiência (PCDs). Ao utilizar o plugin, você concorda com os Termos de Uso e nossa Política de Privacidade.</p>
+		<h3>1. Introdução</h3>
+		<p>Bem-vindo(a)! Este plugin utiliza inteligência artificial para melhorar a acessibilidade digital, fornecendo uma experiência inclusiva e personalizada para todos os usuários, especialmente Pessoas com Deficiência (PCDs). Ao utilizar o plugin, você concorda com os Termos de Uso e nossa Política de Privacidade.</p>
 
-        <h3>2. Coleta e Tratamento de Dados Pessoais</h3>
-        <p>Em conformidade com a Lei Geral de Proteção de Dados (LGPD), informamos que:</p>
-        
-				<h4>Quais dados coletamos?</h4><br/>Podemos coletar informações como dados de navegação (cookies), preferências de acessibilidade ajustadas no plugin e eventuais interações necessárias para personalização da experiência.</p>
-        
-				<h4>Como utilizamos os dados?</h4>
-				<br/>Os dados são utilizados exclusivamente para:
-          <ul>
-            <li>Personalizar os ajustes de acessibilidade.</li>
-            <li>Melhorar a experiência do usuário.</li>
-            <li>Realizar análises anônimas para otimização do sistema.</li>
-          </ul>
-        </p>
+		<h3>2. Coleta e Tratamento de Dados Pessoais</h3>
+		<p>Em conformidade com a Lei Geral de Proteção de Dados (LGPD), informamos que:</p>
+		
+		<h4>Quais dados coletamos?</h4><br/>Podemos coletar informações como dados de navegação (cookies), preferências de acessibilidade ajustadas no plugin e eventuais interações necessárias para personalização da experiência.</p>
+		
+		<h4>Como utilizamos os dados?</h4>
+		<br/>Os dados são utilizados exclusivamente para:
+			<ul>
+				<li>Personalizar os ajustes de acessibilidade.</li>
+				<li>Melhorar a experiência do usuário.</li>
+				<li>Realizar análises anônimas para otimização do sistema.</li>
+			</ul>
+		</p>
 
-        <h3>3. Inteligência Artificial e Funcionalidade</h3>
-        <p>Este plugin utiliza IA para:
-          <ul>
-            <li>Ajustar automaticamente elementos da página (tamanhos de fonte, contraste, navegação por teclado, etc.).</li>
-            <li>Aprender preferências de uso com base em interações anônimas.</li>
-          </ul>
-        </p>
+		<h3>3. Inteligência Artificial e Funcionalidade</h3>
+		<p>Este plugin utiliza IA para:
+			<ul>
+				<li>Ajustar automaticamente elementos da página (tamanhos de fonte, contraste, navegação por teclado, etc.).</li>
+				<li>Aprender preferências de uso com base em interações anônimas.</li>
+			</ul>
+		</p>
 
-        <h3>4. Consentimento</h3>
-        <p>O uso deste plugin requer seu consentimento para processar os dados mencionados. Você pode optar por não permitir o uso do plugin ou retirar seu consentimento a qualquer momento, desativando o plugin ou excluindo cookies relacionados.</p>
+		<h3>4. Consentimento</h3>
+		<p>O uso deste plugin requer seu consentimento para processar os dados mencionados. Você pode optar por não permitir o uso do plugin ou retirar seu consentimento a qualquer momento, desativando o plugin ou excluindo cookies relacionados.</p>
 
-        <h3>5. Segurança dos Dados</h3>
-        <p>Tomamos medidas rigorosas para proteger seus dados contra acesso não autorizado, perda ou alterações indevidas. Os dados coletados são armazenados em servidores seguros, com criptografia e acesso restrito.</p>
+		<h3>5. Segurança dos Dados</h3>
+		<p>Tomamos medidas rigorosas para proteger seus dados contra acesso não autorizado, perda ou alterações indevidas. Os dados coletados são armazenados em servidores seguros, com criptografia e acesso restrito.</p>
 
-        <h3>6. Direitos do Usuário</h3>
-        <p>Conforme a LGPD, você tem os seguintes direitos:
-          <ul>
-            <li>Solicitar acesso, correção ou exclusão de dados pessoais.</li>
-            <li>Saber como seus dados estão sendo tratados.</li>
-            <li>Revogar o consentimento a qualquer momento.</li>
-          </ul>
-        </p>
+		<h3>6. Direitos do Usuário</h3>
+		<p>Conforme a LGPD, você tem os seguintes direitos:
+			<ul>
+				<li>Solicitar acesso, correção ou exclusão de dados pessoais.</li>
+				<li>Saber como seus dados estão sendo tratados.</li>
+				<li>Revogar o consentimento a qualquer momento.</li>
+			</ul>
+		</p>
 
-        <h3>7. Limitação de Responsabilidade</h3>
-        <p>O plugin é uma ferramenta auxiliar. Não garantimos que todas as barreiras de acessibilidade serão eliminadas. A responsabilidade pela acessibilidade integral do conteúdo é do proprietário do site onde o plugin é utilizado.</p>
+		<h3>7. Limitação de Responsabilidade</h3>
+		<p>O plugin é uma ferramenta auxiliar. Não garantimos que todas as barreiras de acessibilidade serão eliminadas. A responsabilidade pela acessibilidade integral do conteúdo é do proprietário do site onde o plugin é utilizado.</p>
 
-        <h3>8. Alterações nos Termos</h3>
-        <p>Podemos atualizar estes Termos de Uso para refletir melhorias ou mudanças legais. Qualquer alteração será informada com antecedência.</p>
+		<h3>8. Alterações nos Termos</h3>
+		<p>Podemos atualizar estes Termos de Uso para refletir melhorias ou mudanças legais. Qualquer alteração será informada com antecedência.</p>
 
-        <h3>9. Contato</h3>
-        <p>Em caso de dúvidas ou solicitações relacionadas ao uso do plugin ou tratamento de dados, entre em contato com nosso Encarregado de Dados (DPO):<br>
-          E-mail: <a href="mailto:traduz@exemplo.com">traduz@exemplo.com</a><br>
-          Telefone: (99) 9999-9999</p>
+		<h3>9. Contato</h3>
+		<p>Em caso de dúvidas ou solicitações relacionadas ao uso do plugin ou tratamento de dados, entre em contato com nosso Encarregado de Dados (DPO):<br>
+			E-mail: <a href="mailto:traduz@exemplo.com">traduz@exemplo.com</a><br>
+			Telefone: (99) 9999-9999</p>
 
-        <h3>10. Aceitação</h3>
-        <p>Ao ativar o plugin, você confirma que leu e concorda com estes Termos de Uso e a Política de Privacidade.</p>
-      </div>
-    </div>
+		<h3>10. Aceitação</h3>
+		<p>Ao ativar o plugin, você confirma que leu e concorda com estes Termos de Uso e a Política de Privacidade.</p>
+	</div>
+</div>
 
   <script src="script.js"></script>
 </body>
