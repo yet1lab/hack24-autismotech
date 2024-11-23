@@ -178,6 +178,7 @@ body {
 }
 
 .modal-content {
+  z-index: 1;
   background: #fff;
   padding: 30px;
   width: 80%;
