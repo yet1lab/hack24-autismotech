@@ -57,9 +57,12 @@ function activateTranslate() {
   aceitarModal.focus()
 }
 
-function feedbackTranslate() {
-  closeModal('modal2');
-  alert('Traduz ativado com sucesso!');
+function openMain() {
+  window.location.href = "";
+  document.getElementById('translate-text').style.display = 'inline'; 
+}
+
+function openCorrect() {
   window.location.href = "correct.html";
   document.getElementById('translate-text').style.display = 'inline'; 
 }

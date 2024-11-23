@@ -39,7 +39,7 @@
 <!--==============================================================-->
 <!--                       TRADUZ POPUPS                          -->
 <!--==============================================================-->
-<div class="button-container">
+<div class="button-container" z-index="-2">
 	<button class="translate-button" onclick="openModal('modal1')" aria-label="Ativar ou desativar tradução">
 		<img src="assets/traduz logo.svg" alt="Ícone de traduzir">
 		<span class="button-text" id="translate-text">Ativar TRADUZ</span>
@@ -50,7 +50,7 @@
 	<div class="modal-content">
 		<div class="button-group">
 			<h2 id="modal1-title">Deseja ativar o TRADUZ?</h2>
-			<button data-message="SIM" class="accept" onclick="feedbackTranslate()">SIM</button>
+			<button data-message="SIM" class="accept" onclick="openCorrect()">SIM</button>
 			<button class="reject" onclick="closeModal('modal1')">NÃO</button>
 		</div>
 
@@ -61,9 +61,9 @@
 <!--==============================================================-->
 <!--                   TRADUZ TERMS OF USE                        -->
 <!--==============================================================-->
-<div class="modal" id="modal3">
-	<div class="modal-content terms-modal">
-		<button class="close" onclick="closeModal('modal3')">X</button>
+<dialog class="modal" id="modal3" aria-labelledby="modal3-title" aria-describedby="modal3-description">
+	<div class="modal-content terms-modal" aria-label="Role para ler os termos">
+		<button class="close" onclick="closeModal('modal3')" aria-label="Fechar termos de uso">X</button>
 		<h2>Termos de Uso do Plugin Traduz</h2>
 
 		<h3>1. Introdução</h3>
@@ -120,7 +120,9 @@
 		<h3>10. Aceitação</h3>
 		<p>Ao ativar o plugin, você confirma que leu e concorda com estes Termos de Uso e a Política de Privacidade.</p>
 	</div>
-</div>
+</dialog>
+
+<!--==============================================================-->
 
   <script src="script.js"></script>
 </body>
