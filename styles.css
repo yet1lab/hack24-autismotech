@@ -240,13 +240,11 @@ body {
 .terms-link {
   display: block;
   margin-top: 20px;
-  color: #000;
-  text-decoration: none;
 }
 
 .terms-modal {
-  text-align: center;
   padding: 20px;
+  text-align: center;
   transition: opacity 0.3s ease-out;
 }
 
